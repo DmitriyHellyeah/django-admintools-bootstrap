@@ -1,4 +1,4 @@
-{% extends "admin/base_site.html" %}
+{% extends "admintools_bootstrap:admin/base_site.html" %}
 {% load i18n admin_modify %}
 {% load url from future %}
 {% load static from staticfiles %}
@@ -53,7 +53,7 @@
 
 {% block field_sets %}
 {% for fieldset in adminform %}
-  {% include "admin/includes/fieldset.html" %}
+  {% include "admintools_bootstrap:admin/includes/fieldset.html" %}
 {% endfor %}
 {% endblock %}
 
